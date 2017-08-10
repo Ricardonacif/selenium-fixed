@@ -183,10 +183,7 @@ module Selenium
           w3c_capabilities = W3C::Capabilities.from_oss(oss_capabilities)
 
           {
-            desiredCapabilities: oss_capabilities,
-            capabilities: {
-              firstMatch: [w3c_capabilities]
-            }
+            desiredCapabilities: oss_capabilities
           }
         end
 
